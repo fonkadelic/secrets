@@ -1,3 +1,3 @@
-#include? "Secrets.xcconfig"
+#include? "Secrets.local.xcconfig"
 
 PRODUCT_BUNDLE_IDENTIFIER = com.my.Secrets
