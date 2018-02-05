@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A30B3322028C4030058531A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A095B8E20260F7000EDB728 /* GoogleService-Info.plist */; };
 		5AB7DD03201C864000D049C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DD02201C864000D049C3 /* AppDelegate.swift */; };
 		5AB7DD05201C864000D049C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DD04201C864000D049C3 /* ViewController.swift */; };
 		5AB7DD08201C864000D049C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7DD06201C864000D049C3 /* Main.storyboard */; };
@@ -76,9 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				5AB7DD15201C893600D049C3 /* App-Info.plist */,
+				5A095B8E20260F7000EDB728 /* GoogleService-Info.plist */,
 				5AB7DD17201C896900D049C3 /* Project.xcconfig */,
 				5A4A9EF3201C8E4700B79039 /* Secrets.local.xcconfig */,
-				5A095B8E20260F7000EDB728 /* GoogleService-Info.plist */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -110,6 +111,7 @@
 				5AB7DCFB201C864000D049C3 /* Sources */,
 				5AB7DCFC201C864000D049C3 /* Frameworks */,
 				5AB7DCFD201C864000D049C3 /* Resources */,
+				5A095BB020279E2100EDB728 /* Modify Analytics Config */,
 			);
 			buildRules = (
 			);
@@ -160,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AB7DD0D201C864000D049C3 /* LaunchScreen.storyboard in Resources */,
+				5A30B3322028C4030058531A /* GoogleService-Info.plist in Resources */,
 				5AB7DD0A201C864000D049C3 /* Assets.xcassets in Resources */,
 				5AB7DD08201C864000D049C3 /* Main.storyboard in Resources */,
 			);
@@ -168,6 +171,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5A095BB020279E2100EDB728 /* Modify Analytics Config */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Modify Analytics Config";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Scripts/google-analytics.sh\"";
+		};
 		5AB7DD19201C8A6B00D049C3 /* Generate Secrets */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
