@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Secrets
-//
-//  Created by Bernhard Loibl on 27.01.18.
-//  Copyright © 2018 Bernhard Loibl. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
